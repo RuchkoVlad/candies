@@ -1,0 +1,385 @@
+@import "variables.css";
+
+body {
+  margin: 0;
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 158px 158px 70px 118px;
+  max-width: 1378px;
+}
+
+.sweets_left_side,
+.sweets_right_side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 470px;
+}
+
+.sweets_left_side {
+  padding: 35px 0  0 30px;
+  margin-right: 80px;
+}
+
+.sweets_title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.headline {
+  font-family: var(--font_gilroy);
+  font-size: 52px;
+  color: var(--font_color);
+  margin: 0 35px 0 0;
+  line-height: 58px;
+}
+
+.description {
+  font-family: var(--font_roboto);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--copyright_color);
+}
+
+.main_hr {
+  border: none;
+  height: 1px;
+  background-color: var(--light_background);
+  width: 100%;
+}
+
+.li_right_side {
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.form_for_mail {
+  margin-top: 30px;
+}
+
+.label_mail {
+  font-family: var(--font_gilroy);
+  font-size: 18px;
+  color: var(--font_color);
+  display: block;
+}
+
+.container_for_mail {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mail_input {
+  background: var(--light_background);
+  border-radius: 30px;
+  height: 60px;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.mail_input:hover {
+  background: var(--hover_background);
+  transition: 0.3s;
+}
+
+.mail_input:focus:valid {
+  border: 2px solid var(--green_border);
+  outline: none;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.mail_input:active {
+  border: 2px solid white;
+  outline: none;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.mail_input:focus:invalid {
+  background: var(--error_background);
+  border: 2px solid var(--error_border);
+  outline: none;
+  transition: 0.3s;
+
+}
+
+.mail_button {
+  background: url("./img/arrowright.png") no-repeat center;
+}
+
+.mail_input:focus:valid + .mail_button {
+  border: 2px solid var(--green_border);
+}
+
+.mail_input:focus:invalid + .mail_button {
+  border: 2px solid var(--error_border);
+}
+
+.mail_input::placeholder {
+  color: var(--placeholder_color);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--font_roboto);
+}
+
+.container_for_mail .mail_button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.container_for_mail .mail_button:hover {
+  border: 2px solid var(--green_border);
+  transition: 0.3s;
+}
+
+.container_for_mail .mail_button:focus {
+  outline: none;
+  box-sizing: border-box;
+  background: var(--green_border) url("./img/check_mark.svg") no-repeat center;
+  transition: 0.3s;
+}
+
+/* right side of main*/
+
+.sweets_right_side {
+  flex-basis: 470px;
+}
+
+.list_icon {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1 1 300px;
+  margin-top: 0;
+}
+
+.list_icon .nav_icon {
+  background-color: var(--light_background);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+.list_icon .nav_icon:hover {
+  background-color: var(--hover_background);
+  transition: 0.3s;
+}
+
+.list_icon .nav_icon:focus {
+  border: 2px solid var(--green_border);
+  transition: 0.1s;
+  box-sizing: border-box;
+}
+
+.list_framework {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.li_left_side {
+  height: 100px;
+}
+
+.span_js {
+  font-family: var(--font_gilroy);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--violet_color);
+}
+
+.name_li {
+  font-family: var(--font_gilroy);
+  font-size: 19px;
+  color: var(--font_color);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+}
+
+.span_CSS {
+  font-family: var(--font_roboto);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--copyright_color);
+  margin-bottom: 20px;
+}
+
+.link {
+  background: white;
+  border: 2px solid var(--hover_background);
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: var(--font_gilroy);
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--font_color);
+  width: 76px;
+  height: 28px;
+  outline: none;
+}
+
+.link:hover {
+  border-color: var(--green_border);
+  color: var(--violet_color);
+  transition: 0.3s;
+}
+
+.container_link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container_link .link {
+  margin-top: -5px;
+}
+
+.all_candies {
+  background: var(--violet_color);
+  border-radius: 22px;
+  width: 100%;
+  height: 50px;
+  font-family: var(--font_gilroy);
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  border: none;
+  align-self: center;
+  margin-top: 22px;
+  outline: none;
+  padding: 0;
+}
+
+.all_candies:hover {
+  background-color: var(--hover_violet);
+  transition: 0.3s;
+}
+
+/* footer */
+.footer_lists {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1652px;
+}
+
+.footer_lists .title_li {
+  font-family: var(--font_gilroy);
+  font-size: 14px;
+  color: white;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.all_li {
+  font-family: var(--font_roboto);
+  font-size: 12px;
+  color: var(--li-font_color);
+  list-style: none;
+}
+
+.copyright {
+  font-family: var(--font_roboto);
+  font-size: 11px;
+  color: var(--copyright_color);
+  background: var(--font_color);
+  display: block;
+  text-align: end;
+  padding-right: 172px;
+}
+
+.site_mail {
+  color: var(--green_border);
+  margin-top: 17px;
+}
+
+.left_foot {
+  display: flex;
+}
+
+.left_foot {
+  margin: 269px 200px 0 148px;
+}
+
+.right_foot {
+  margin: 269px 153px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.last {
+  max-width: 213px;
+  width: 100%;
+  line-height: 17px;
+}
+
+.cooperation {
+  font-family: var(--font_roboto);
+  font-size: 12px;
+  color: white;
+  display: block;
+  margin: 36px 50px 17px 0;
+}
+
+.a_footer {
+  font-size: 12px;
+  color: var(--li-font_color);
+  text-decoration: none;
+  padding: 8px 10px 5px 0;
+  display: inline-block;
+}
+
+.first_ul_footer {
+  margin-right: 128px;
+  padding-left: 0;
+}
+
+.second_ul_footer {
+  margin-right: 123px;
+  padding-left: 0;
+}
+
+.third_ul_footer {
+  padding-left: 0;
+}
+
+.connection {
+  margin-right: 116px;
+  padding: 0;
+}
+
+.issues {
+  padding: 0;
+}
+
+.footer_width {
+  background: var(--font_color);
+}
+
+.ctrl {
+  font-size: 12px;
+  line-height: 3;
+  font-family: var(--font_roboto);
+}
